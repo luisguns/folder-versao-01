@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "275988360505",
+    "firebase_url": "https://folder-4ae57.firebaseio.com",
+    "project_id": "folder-4ae57",
+    "storage_bucket": "folder-4ae57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275988360505:android:9e3c55cea0cce4f1",
+        "android_client_info": {
+          "package_name": "br.com.naveonline.folder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275988360505-oen9va2uejnn5qns425gcgq1ilnh2plm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.naveonline.folder",
+            "certificate_hash": "983f30ff330dd7a889775589cee327f9f944f19c"
+          }
+        },
+        {
+          "client_id": "275988360505-1fdrs8ph951qbc3j325duipae500eho6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJdEk3g31dDOH6KuuTnVUNYrZ5mBvlKwQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275988360505-1fdrs8ph951qbc3j325duipae500eho6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

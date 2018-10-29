@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.naveonline.folder.fragment.ProdutoDetailFragment">
+
+    <TextView
+        android:id="@+id/tv_descricao_produto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="17dp"
+        android:lineSpacingExtra="2sp"
+        android:padding="5dp"
+        android:text="Descrição do produto"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="395dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descricao_produto" />
+
+    <br.com.naveonline.folder.view.RoundedImageView
+        android:id="@+id/iv_empresa"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_nome_empresa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Nome da Empresa"
+        android:textColor="@color/primary_text"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/iv_empresa"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/iv_localizacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_location_on_black_24dp"
+        android:tint="@color/icons"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_empresa" />
+
+    <TextView
+        android:id="@+id/tv_rua_numero_empresa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:text="Rua, número"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/iv_telefone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_empresa" />
+
+    <TextView
+        android:id="@+id/tv_bairro_estado_cidade_empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Bairro, Estado - Cidade"
+        app:layout_constraintLeft_toRightOf="@+id/iv_telefone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rua_numero_empresa" />
+
+    <ImageView
+        android:id="@+id/iv_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_call_black_24dp"
+        android:tint="@color/icons"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cep" />
+
+    <TextView
+        android:id="@+id/tv_telefone_empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="65dp"
+        android:text="Telefone"
+        app:layout_constraintLeft_toRightOf="@+id/iv_telefone"
+        app:layout_constraintTop_toBottomOf="@+id/iv_localizacao" />
+
+    <Button
+        android:id="@+id/btn_ligar"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="LIGAR"
+        android:textColor="@color/primary_dark"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/tv_telefone_empresa"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cep" />
+
+    <ImageView
+        android:id="@+id/iv_horario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_access_time_black_24dp"
+        android:tint="@color/icons"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_telefone_empresa" />
+
+    <TextView
+        android:id="@+id/tv_horario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Horário de Funcionamento"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/iv_horario"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_telefone_empresa" />
+
+    <LinearLayout
+        android:id="@+id/lln_horario_empresa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_horario"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="16dp">
+
+        <LinearLayout
+            android:id="@+id/lln_dia_semana_empresa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lln_hora_empresa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_entrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_motorcycle_black_24dp"
+        android:tint="@color/icons"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lln_horario_empresa" />
+
+    <TextView
+        android:id="@+id/tv_entrega"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Fazemos entrega"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/iv_entrega"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lln_horario_empresa" />
+
+    <TextView
+        android:id="@+id/tv_cep"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:text="CEP"
+        app:layout_constraintLeft_toRightOf="@+id/iv_telefone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bairro_estado_cidade_empresa" />
+
+    <Button
+        android:id="@+id/btn_mapa"
+        android:layout_width="44dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/transparent"
+        android:text="MAPS"
+        android:textColor="@color/primary_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_bairro_estado_cidade_empresa"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rua_numero_empresa" />
+
+    <Button
+        android:id="@+id/btn_deletar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_red_dark"
+        android:visibility="visible"
+        android:text="Deletar"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_entrega"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+</android.support.constraint.ConstraintLayout>
+
+
